@@ -1,0 +1,124 @@
+/* Lyrics Links */
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+
+/* colors ⬇️ */
+:root{
+    --orange:#e28525;
+    --blue:#016972;
+    --green:#00403f;
+}
+/* General ⬇️ settings */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Agdasima', sans-serif;
+}
+
+/* HTML ⬇️ settings */
+html{
+  font-size: 62.5%;
+  font-family: 'Agdasima', sans-serif;
+}
+/* body ⬇️ settings */
+body{
+    background-color: white;
+}
+
+
+/* Main container ⬇️*/
+.colum-container{
+  width: 70%;
+  margin: 13rem auto;
+  display: grid;
+  /* gap: 2rem; */
+  grid-template-columns: repeat(3, minmax(300px, 400px));
+}
+
+
+/* <!-- Cards --> ⬇️ */
+.colum-container .colum-card{
+height: 500px;
+padding:6rem  5rem;
+display: grid;
+
+}
+
+/* Individual settings for each card ⬇️ */
+.c-2{
+    background-color: var(--blue);
+    border-radius: 0;
+}
+.c-1{
+    background-color: var(--orange);
+    border-radius: 2rem  0 0 2rem;
+}
+.c-3{
+    background-color: var(--green);
+    border-radius: 0  2rem  2rem 0;
+}
+
+
+/* image ⬇️ */
+.colum-container .colum-card img{
+    width: 70px;
+}
+
+/* text container⬇️ */
+.colum-container .colum-card .colum-card_txt{
+margin-top: 45px;
+width: 95%;
+color: white;
+}
+.colum-container .colum-card .colum-card_txt h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+.colum-container .colum-card .colum-card_txt p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fbf1e9;
+}
+
+/* link button ⬇️ */
+a{
+    align-self: flex-end;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    width: 70%;
+}
+
+@media (max-width: 700px){
+    .colum-container {
+        width: 90%;
+        margin: 13rem auto;
+        display: grid;
+        grid-template-columns: minmax(300px, 400px); 
+        justify-content: center;
+    }
+    .c-1 {
+        background-color: var(--orange);
+        border-radius: 2rem 2rem 0 0;
+    }
+    .c-3 {
+        background-color: var(--green);
+        border-radius: 0 0 2rem 2rem;
+    }
+}
+
+
+
+
+
